@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root{
+    --main-color: rgb(227, 236, 236);
+    --header-bgColor: rgb(35, 37, 37);
+}
+.first{
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+.second{
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+}
+p{
+    color: brown;
+    font-size: 40px;
+}
+.header{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--header-bgColor);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    display: flex ;
+    list-style-type: none;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 300ms;
+    font-size: 20px
+}
+ul li a ion-icon{
+    color: var(--main-color);
+    font-size: 25px;
+    transition: 300ms
+}
+.menu{
+    font-size: 25px;
+}
+.btn-menu{
+    display: none;
+}
+.logo{
+    margin-left: 100px;
+    color: rgb(227, 236, 236);
+    font-size: 35px;
+}
+.socmed{
+    margin: 0 100px;
+}
+.msg{
+    font-size: 75px;
+    color: var(--header-bgColor);
+}
+.php{
+    color: var(--header-bgColor);
+    font-size: 25px;
+    font-weight: bold;
+}
+span{
+    color: brown;
+    transition: 300ms;
+}
+.btn-hire{
+    margin-top: 20px;
+    background-color: brown;
+    width: 190px;
+    height: 50px;
+    border: none;
+    color: var(--main-color);
+    transition: width 1s;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 0 20px;
+    border-radius: 5px;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.add-cv{
+    display: none;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.textBg{
+    font-size: 180px;
+    transform: rotate(30deg);
+    position: absolute;
+    right: 100px;
+    text-shadow: 50px 50px#888888;
+}
+.btn-hire:hover{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.btn-hire:hover .add-cv{
+    display: block;
+}
+.add-cv:hover{
+    color: var(--header-bgColor);
+
+}
+a:hover{
+    color: brown;
+}
+ul li a ion-icon:hover{
+    color: brown;
+}
+ul{
+    margin-right: 50px;
+}
+span:hover{
+    color: rgb(255, 4, 4);
+}
+
+.me{
+    position: relative;
+    top: 40px;
+    right: 300px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 880px) { 
+    .btn-menu{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    .logo{
+        font-size: 20px;
+        margin: 0 25px;
+    }
+    .btn-menu{
+        margin-right: 25px;
+    }
+    .first{
+        padding-left: 25px;
+    }
+    .msg{
+        font-size: 35px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .php{
+        font-size: 10px;
+    }
+}
