@@ -90,7 +90,7 @@ span{
     height: 50px;
     border: none;
     color: var(--main-color);
-    transition: width 1s;
+    transition: all 1s ease;
     font-weight: bolder;
     font-size: 17px;
     padding: 0 20px;
